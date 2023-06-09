@@ -1,0 +1,102 @@
+.sq-cards-wrapper
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 20px
+    justify-content: center
+
+.sq-edit-ci
+    border-radius: 0.5rem
+    border: 2px solid #080808
+    transition-duration: 0.666s
+    user-select: none
+    cursor: pointer
+
+.sq-edit-ci:hover
+    background: #ffaaff
+
+.sq-edit-ci img
+    width: 100%
+    object-fit: cover
+    border-radius: 0.5rem
+
+.sq-edit-modal
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 20px
+
+.sq-edit-pos-container
+    width: 300px
+    height: 560px
+    overflow-y: auto
+    overflow-x: hidden
+    word-break: break-all
+    background: rgb(200,200,200)
+    position: relative
+    border-radius: 0.5rem
+    padding: 0.666rem
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.sq-edit-counter
+    display: flex
+    position: absolute
+    align-self: center
+    align-content: center
+    flex-wrap: wrap
+    user-select: none
+    font-size: 200px
+    color: rgb(170,170,170)
+    font-weight: 800
+    height: calc(100% - 2 * 0.666rem)
+
+.sq-edit-picker, .sq-edit-deleter, .sq-edit-loopa
+    font-size: 20px !important
+    position: relative
+    height: calc(100% / 3)
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    transition-duration: 0.666s
+    user-select: none
+    cursor: pointer
+    background: rgba(0, 0, 0, 0.2)
+    border-radius: 0.5rem
+    color: #ffffff
+
+.sq-edit-loopa:hover
+    font-size: 30px !important
+    background: #eeff0080
+    height: 300%
+
+.sq-edit-picker:hover
+    font-size: 30px !important
+    background: #ffaaff80
+    height: 300%
+
+.sq-edit-deleter:hover
+    font-size: 30px !important
+    background: #ff240080
+    height: 300%
+
+.sq-edit-underlying
+    background: aliceblue
+    width: 100%
+    height: 100%
+    position: absolute
+    box-sizing: border-box
+    padding: 1.666rem
+    overflow: hidden
+
+.sq-edit-preview-img
+    border-radius: 0.5rem
+    height: 300px
+    width: 200px
+    object-fit: cover
+    margin: 0 0 1rem 0

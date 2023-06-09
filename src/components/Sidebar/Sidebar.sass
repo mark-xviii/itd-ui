@@ -1,0 +1,92 @@
+$sidebar-witdh: 280px
+$button-width: 48px
+
+.sidebar-shown
+  left: 0
+
+.sidebar-hidden
+  left: -($sidebar-witdh)
+
+.sidebar-attention
+  position: fixed
+  height: 100vh
+  z-index: 1002
+  width: 0
+  transition: 0.666s
+  pointer-events: none
+
+.sidebar-attention-active
+  background: rgba(0,0,0,0.666)
+  pointer-events: all
+  width: 100vw
+
+.sidebar-inner
+  position: relative
+  display: flex
+  flex-direction: row
+  height: fit-content
+  width: fit-content
+  background: none !important
+  pointer-events: none
+
+.sidebar
+  transition: left 0.3s linear
+  position: relative
+  height: 100vh
+  width: $sidebar-witdh
+  background: #ffffff
+  display: flex
+  flex-direction: column
+  padding: 0.333rem 0.666rem
+  box-sizing: border-box
+  pointer-events: all
+  z-index: 1111
+
+.sidebar-button
+  position: relative
+  transition: left 0.3s linear
+  width: $button-width
+  height: $button-width
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #ffaaff
+  background: #ffffff
+  z-index: 1111
+  pointer-events: all
+  cursor: pointer
+
+.button-returned
+  left: -$sidebar-witdh
+
+.button-moved
+  left: 0
+
+.sidebar-entry
+  font-size: 22px !important
+  margin: 0.333rem
+  display: flex
+  flex-direction: row-reverse
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+  user-select: none
+
+.sidebar-divider
+  text-align: center
+  align-self: center
+  border: #ffaaff 1px solid
+  width: 100%
+
+.sidebar-icon
+  font-size: 26px !important
+
+.sidebar-entry-heading
+  font-size: 22px !important
+  margin: 0.333rem
+  display: flex
+  flex-direction: row
+  user-select: none
+
+.sidebar-entry-emph
+  opacity: 0.6

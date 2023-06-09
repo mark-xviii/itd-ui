@@ -1,0 +1,53 @@
+.modal-container
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  position: fixed
+  display: flex
+  flex-direction: column
+  background: rgba(0, 0, 0, 0.8)
+  z-index: 2000
+  align-content: center
+  align-items: center
+  justify-content: center
+
+.modal-window
+  position: relative
+  background: #ffffff
+  width: max(320px, 80vw)
+  max-height: 90vh
+  overflow-x: hidden
+  overflow-y: auto
+  padding: 16px
+  box-sizing: border-box
+  border-color: 0.5em
+  color: #080808
+  display: flex
+  flex-direction: column
+  border-radius: 0.5rem
+  gap: 16.666px
+
+.modal-button
+  border: none
+  border-radius: 0.5rem
+  height: 1.666rem
+  font-size: 16px
+  padding: 0.666rem
+  display: flex
+  justify-content: center
+  align-items: center
+  width: fit-content
+  cursor: pointer
+
+.mb-alt
+  background: #ffaaff
+  color: #ffffff
+
+.modal-buttons
+  display: flex
+  flex-direction: row
+  width: 100%
+  justify-content: space-evenly
+  gap: 16.666px
+  flex-wrap: wrap

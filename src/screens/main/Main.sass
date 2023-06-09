@@ -1,0 +1,166 @@
+.main-container
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+
+.main-play
+  display: flex
+  flex-direction: column
+  align-items: center
+  min-height: 100vh
+  background: #080808
+  object-fit: cover
+  box-sizing: border-box
+
+.main-footer
+  min-height: 15vh
+  max-height: 60vh
+  background: #080808
+  color: #ffffff
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-items: center
+  position: relative
+  gap: 16.666px
+  padding: 1.666rem
+  box-sizing: border-box
+
+.main-logo
+  justify-content: center
+  margin: 8vh 0 4vh 0
+  width: 90%
+  pointer-events: none
+  user-select: none
+  z-index: 10
+
+.main-paragraph
+  color: #ffffff
+  margin: 3.33vh 0 4vh 0
+  z-index: 10
+  font-size: 26px
+
+.main-belt
+  width: 100%
+  z-index: 1
+
+.main-play-bg
+  width: 100vw
+  height: 100vh
+  position: absolute
+  z-index: 0
+
+@media (min-width: 640px)
+  .main-logo
+    width: 90%
+
+  .main-belt
+    width: 100vw
+
+  .main-paragraph
+    font-size: 28px
+
+@media (min-width: 768px)
+  .main-logo
+    width: 90%
+
+  .main-belt
+    width: 100vw
+
+  .main-paragraph
+    font-size: 32px
+
+@media (min-width: 1080px)
+  .main-logo
+    width: 900px
+
+  .main-belt
+    width: 900px
+
+    .main-paragraph
+      font-size: 36px
+
+@media (min-width: 1366px)
+  .main-logo
+    width: 1200px
+
+  .main-belt
+    width: 1200px
+
+  .main-paragraph
+    font-size: 38px
+
+.main-interactive-paragraph
+  cursor: pointer
+  text-decoration: underline
+
+.vanta-canvas
+  filter: brightness(0.8)
+
+.mf-text-info
+  height: fit-content
+  text-align: justify
+  display: inline
+
+.mf-text-info p
+  margin-bottom: 0.618rem
+
+.mf-logo
+  display: inline
+  float: left
+  margin: 0 6.66px 6.66px 0
+  position: relative
+  height: 122px
+
+.main-presentation
+  min-height: 100vh
+  background: url('../../assets/branding/itd_avant_garde.png')
+  background-size: cover
+  z-index: 100
+  box-sizing: border-box
+  padding: 0.666rem
+  color: #ffffff
+
+.mp-title
+  text-align: center
+
+.mp-record
+  font-size: 24px
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin: 1rem 0 0 0
+
+@media (min-width: 640px)
+  .mp-record
+    width: 100%
+
+@media (min-width: 768px)
+  .mp-record
+    width: 100%
+
+@media (min-width: 1080px)
+  .mp-record
+    width: 80%
+
+@media (min-width: 1366px)
+  .mp-record
+    width: 60%
+
+.mpr-org-title
+  font-weight: 600
+  width: 64ch
+  white-space: nowrap
+  overflow: hidden !important
+  text-overflow: ellipsis
+
+.mpr-org-highscore
+  font-weight: 600
+
+.record-rows
+  display: flex
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  align-items: center

@@ -1,0 +1,47 @@
+$card-width: 320px
+$card-ratio: 1.5
+
+.dgc-img
+  width: $card-width
+  height: calc($card-ratio * $card-width)
+  object-fit: cover
+  border-radius: 0.5rem
+  box-shadow: 0 0 20px #070707
+  position: absolute
+
+.dgc-container
+  height: 100%
+  position: relative
+
+.dgc-plaque
+  position: absolute
+  bottom: 0
+  width: 100%
+  text-align: center
+  background: rgba(0, 0, 0, 0.8)
+  color: #ffffff
+  border-radius: 0 0 0.5rem 0.5rem
+  box-sizing: border-box
+  padding: 5px
+  font-size: 20px
+
+.dgcc-wrap
+  position: relative
+  height: calc($card-ratio * $card-width)
+
+.dgc-over
+  display: flex
+  flex-direction: column
+  height: fit-content
+  width: $card-width
+  position: relative
+  user-select: none
+  z-index: 10
+
+.dgc-reply
+  position: relative
+  text-align: center
+  width: $card-width
+  box-sizing: border-box
+  padding: 4px
+  height: fit-content

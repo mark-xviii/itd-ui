@@ -1,0 +1,28 @@
+.fa-wrap
+  perspective-origin: 50% 50%
+  width: 100vw
+  height: 100vh
+  background: #080808
+  z-index: -900
+  position: absolute
+  overflow: hidden
+
+.fa-svg
+  position: absolute
+  bottom: -100vh
+  transform-style: preserve-3d
+  height: 12vh
+
+$total: 16
+
+@for $i from 1 through $total
+  .fa-svg:nth-child(#{$i})
+    left: random(120) * 1% - 20
+    animation: raise#{$i} 6 + random(15) +s linear infinite
+    animation-delay: random(5) - 5 + s
+    transform: rotate(random(360) + deg)
+    z-index: $i - 200
+    @keyframes raise#{$i}
+      to
+        bottom: 150vh
+        transform: rotate(random(360) + deg)

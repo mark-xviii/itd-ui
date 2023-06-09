@@ -1,0 +1,64 @@
+$card-ratio: 1.5
+$card-width: 180px
+
+@media (min-width: 640px)
+  $card-width: 0px
+
+  .card-container
+    width: $card-width
+    height: calc($card-width * $card-ratio)
+
+  @media (min-width: 768px)
+    $card-width: 0px
+
+    .card-container
+      width: $card-width
+      height: calc($card-width * $card-ratio)
+
+  @media (min-width: 1080px)
+    $card-width: 0px
+
+    .card-container
+      width: $card-width
+      height: calc($card-width * $card-ratio)
+
+  @media (min-width: 1280px)
+    $card-width: 0px
+
+    .card-container
+      width: $card-width
+      height: calc($card-width * $card-ratio)
+
+.card-container
+  display: flex
+  flex-direction: column
+  width: $card-width
+  height: calc($card-width * $card-ratio)
+  object-fit: cover
+  border-radius: 0.5rem
+
+.card-image
+  position: absolute
+  cursor: none
+  pointer-events: none
+  user-select: none
+  width: 100%
+  height: 100%
+  object-fit: cover
+  overflow: hidden
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem
+
+.card-plaque
+  position: absolute
+  z-index: 10
+  width: 100%
+  bottom: 0
+  background: rgba(0,0,0,0.8)
+  color: #ffffff
+  border-radius: 0 0 0.5rem 0.5rem
+
+.card-plaque p
+  cursor: none
+  pointer-events: none
+  user-select: none
+  text-align: center
